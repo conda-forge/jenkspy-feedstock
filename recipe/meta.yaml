@@ -21,6 +21,8 @@ requirements:
   build:
     - {{ compiler('c') }}
   host:
+    - {{ compiler('c') }}
+  host:
     - python
     - setuptools
   run:
