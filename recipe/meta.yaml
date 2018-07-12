@@ -19,8 +19,11 @@ build:
 
 requirements:
   build:
+    - {{ compiler('c') }}
+  host:
+    - {{ compiler('c') }}
+  host:
     - python
-    - toolchain
     - setuptools
   run:
     - python
@@ -37,7 +40,7 @@ about:
   summary: Compute Natural Breaks (Jenks algorythm)
   description: "Compute natural break values (Jenks algorythm) on list/tuple/numpy.ndarray of integers/floats."
   dev_url: https://github.com/mthh/jenkspy
-  
+
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - nickp60
