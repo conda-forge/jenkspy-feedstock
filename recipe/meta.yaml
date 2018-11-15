@@ -1,7 +1,7 @@
 {% set name = "jenkspy" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "f8fa439f0ff3dc8c40bf1e24ed0b64eff44624118a88225058b000eb4d95b90c" %}
+{% set hash_value = "e1d4189b620ce5053aaba65736505023586a7ff83f05d9267d6e78c37a13c2b2" %}
 
 package:
   name: '{{ name|lower }}'
