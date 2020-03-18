@@ -1,7 +1,5 @@
 {% set name = "jenkspy" %}
 {% set version = "0.1.4" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "f8fa439f0ff3dc8c40bf1e24ed0b64eff44624118a88225058b000eb4d95b90c" %}
 
 package:
   name: '{{ name|lower }}'
@@ -10,10 +8,10 @@ package:
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  '{{ hash_type }}': '{{ hash_value }}'
+  'sha256': 'f8fa439f0ff3dc8c40bf1e24ed0b64eff44624118a88225058b000eb4d95b90c'
 
 build:
-  number: 1000
+  number: 1001
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
