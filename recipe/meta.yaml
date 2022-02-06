@@ -1,19 +1,17 @@
 {% set name = "jenkspy" %}
-{% set version = "0.1.4" %}
+{% set version = "0.2.0" %}
 
 package:
   name: '{{ name|lower }}'
   version: '{{ version }}'
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  'sha256': 'f8fa439f0ff3dc8c40bf1e24ed0b64eff44624118a88225058b000eb4d95b90c'
+  sha256: d14d70b3b8e353f5736a31c2ef048c9869c34f0452542866c1362d1cd924bbc1
 
 build:
-  number: 1002
-  script: python setup.py install --single-version-externally-managed --record=record.txt
-
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   build:
@@ -21,14 +19,16 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler('c') }}
   host:
-    - {{ compiler('c') }}
-  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
 
 test:
+  requires:
+    - pip
+  commands:
+    - pip check
   imports:
     - jenkspy
 
