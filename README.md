@@ -7,11 +7,11 @@ Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jenkspy-feedstock/blob/main/LICENSE.txt)
 
-Summary: Compute Natural Breaks (Jenks algorythm)
+Summary: Compute Natural Breaks (Fisher-Jenks algorithm)
 
 Development: https://github.com/mthh/jenkspy
 
-Compute natural break values (Jenks algorythm) on list/tuple/numpy.ndarray of integers/floats.
+Compute natural breaks (Fisher-Jenks algorithm) on list/tuple/array/numpy.ndarray of integers/floats.
 
 Current build status
 ====================
