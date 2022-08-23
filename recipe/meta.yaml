@@ -1,5 +1,5 @@
 {% set name = "jenkspy" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 77b1f1c1fa65b397fe6fea60d458c5af02473dd3f0453a261dc2fd6ef0ffc713
+  sha256: d592dd5b459b3af6e88e533551a1628c7cff5386e310837a584e1b15648080e1
 
 build:
   number: 0
