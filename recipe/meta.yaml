@@ -1,5 +1,5 @@
 {% set name = "jenkspy" %}
-{% set version = "0.2.4" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0ca722b940b4c097207b20290994fabdd8dda05c09ff40198de78f9109fbb26
+  sha256: 77b1f1c1fa65b397fe6fea60d458c5af02473dd3f0453a261dc2fd6ef0ffc713
 
 build:
   number: 0
@@ -23,6 +23,7 @@ requirements:
     - pip
   run:
     - python
+    - numpy
 
 test:
   requires:
@@ -37,8 +38,8 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Compute Natural Breaks (Jenks algorythm)
-  description: Compute natural break values (Jenks algorythm) on list/tuple/numpy.ndarray of integers/floats.
+  summary: Compute Natural Breaks (Fisher-Jenks algorithm)
+  description: Compute natural breaks (Fisher-Jenks algorithm) on list/tuple/array/numpy.ndarray of integers/floats.
   dev_url: https://github.com/mthh/jenkspy
 
 extra:
