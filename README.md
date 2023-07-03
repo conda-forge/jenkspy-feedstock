@@ -1,11 +1,11 @@
-About jenkspy
-=============
+About jenkspy-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jenkspy-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/mthh/jenkspy
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jenkspy-feedstock/blob/main/LICENSE.txt)
 
 Summary: Compute Natural Breaks (Fisher-Jenks algorithm)
 
@@ -314,5 +314,4 @@ Feedstock Maintainers
 =====================
 
 * [@mthh](https://github.com/mthh/)
-* [@nickp60](https://github.com/nickp60/)
 
