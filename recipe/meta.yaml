@@ -20,6 +20,7 @@ requirements:
     - {{ compiler('c') }}
   host:
     - python
+    - cython <3
     - pip
   run:
     - python
