@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/jenkspy-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/jenkspy-{{ version }}.tar.gz
   sha256: e61e2103bed031cdfac9996604308298bc0a29f8051f09c343d9ce35af32a1f3
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 3
+  number: 4
 
 requirements:
   build:
